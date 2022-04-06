@@ -1,0 +1,102 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    margin: 8px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 500px;
+    width: 500px;
+    color: white;
+    background-size: 100% 100%;
+    transition: 500ms ease-in-out;
+    -webkit-box-shadow: 0px 0px 5px 1px #000000;
+    box-shadow: 0px 0px 5px 1px #000000;
+    // background-size: contain;
+  }
+
+  .carousel-arrows {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .carousel-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    opacity: 0.7;
+    transition: 200ms ease-in-out;
+    -webkit-box-shadow: 0px 0px 5px 1px #000000;
+    box-shadow: 0px 0px 5px 1px #000000;
+
+    img {
+      height: 60%;
+    }
+
+    .left {
+      transform: rotateZ(180deg);
+    }
+  }
+  .carousel-arrow:hover {
+    height: 35px;
+    width: 35px;
+    opacity: 1;
+    border: 1px solid white;
+  }
+
+  .carousel-bullets {
+    display: flex;
+    ul {
+      display: flex;
+      list-style: none;
+      width: 100%;
+      font-size: 36px;
+      color: white;
+
+      li {
+        height: 5px;
+        width: 30px;
+        border-radius: 6px;
+        background-color: grey;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+      }
+      li:hover {
+        width: 35px;
+      }
+    }
+  }
+  .button {
+    color: black;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 8px 10px;
+    // border: 3px solid rgb(123, 123, 123);
+    background-color: rgba(255, 255, 255, 0.39);
+    float: left;
+    border-radius: 4px;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Bakbak One';
+    -webkit-box-shadow: 1px 1px 15px -5px #000000;
+    box-shadow: 1px 1px 15px -5px #000000;
+  }
+}
